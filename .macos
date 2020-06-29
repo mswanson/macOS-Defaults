@@ -866,6 +866,15 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 # cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 
 ###############################################################################
+# HammerSpoon.app                                                             #
+###############################################################################
+
+# Move the hammerspoon config folder inside ~/.config
+# See https://github.com/Hammerspoon/hammerspoon/issues/579
+# See http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+
+###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 
